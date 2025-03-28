@@ -637,6 +637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497940424}
   - component: {fileID: 497940425}
+  - component: {fileID: 497940427}
   - component: {fileID: 497940426}
   m_Layer: 0
   m_Name: GameObject
@@ -674,7 +675,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullerPrefab: {fileID: 5761768447480796511, guid: 7d0de1a5181934944845b69ed920c554, type: 3}
   force: 7000
---- !u!82 &497940426
+--- !u!114 &497940426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497940423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa68b660196eed4da8cb34bdee4a16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Source: {fileID: 497940427}
+  Sound: {fileID: 8300000, guid: 6eb3b7d5996ffb8488bf5c10b80bfe9b, type: 3}
+--- !u!82 &497940427
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -684,9 +699,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6eb3b7d5996ffb8488bf5c10b80bfe9b, type: 3}
-  m_Resource: {fileID: 8300000, guid: 6eb3b7d5996ffb8488bf5c10b80bfe9b, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
