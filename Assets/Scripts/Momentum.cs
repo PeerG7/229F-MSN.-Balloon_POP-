@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Momentum : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    Rigidbody rb;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        rb.GetComponent<Rigidbody>();
+        rb.AddForce(Vector3.forward);
     }
 }
