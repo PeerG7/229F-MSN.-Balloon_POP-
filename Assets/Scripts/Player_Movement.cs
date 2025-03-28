@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float moveX = Input.GetAxis("Horizontal");     // ซ้าย-ขวา
+        float moveX = Input.GetAxis("Horizontal");     
         Vector3 move = new Vector3(moveX, 0, 0);     
         controller.Move(move * speed * Time.deltaTime);
     }
