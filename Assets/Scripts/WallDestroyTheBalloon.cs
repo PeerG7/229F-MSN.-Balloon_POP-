@@ -7,7 +7,6 @@ public class WallDestroyTheBalloon : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy")) // ตรวจสอบว่าชนกับกระสุนหรือไม่
         {
             Destroy(other.gameObject);
-
         }
     }
 }
