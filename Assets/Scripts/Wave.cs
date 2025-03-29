@@ -1,4 +1,5 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Wave : MonoBehaviour
 {
@@ -7,3 +8,4 @@ public class Wave : MonoBehaviour
     public int Delaystart;
     public float spawnInterval;
 }
+
