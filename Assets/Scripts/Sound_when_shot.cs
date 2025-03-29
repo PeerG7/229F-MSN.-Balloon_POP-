@@ -18,7 +18,7 @@ public class Sound_when_shot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W)) // ตรวจจับการกดปุ่ม W
+        if (Input.GetMouseButtonDown(0)) // ตรวจจับการกดปุ่ม W
         {
             if (Source != null && Sound != null)
             {
