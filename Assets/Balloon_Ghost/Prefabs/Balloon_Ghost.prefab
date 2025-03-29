@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4187144168491269353}
   - component: {fileID: 8941486746507084546}
   - component: {fileID: -6838076564478785964}
+  - component: {fileID: -8749760720876285265}
   m_Layer: 0
   m_Name: Balloon_Ghost
   m_TagString: Enemy
@@ -80,8 +81,21 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.9249384, y: 9.809519, z: 3.0365481}
+  m_Center: {x: 0.12256372, y: -0.18325424, z: -0.26500773}
+--- !u!114 &-8749760720876285265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187144168491269354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de9221731a63a845bd65d5a6f4f868f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
 --- !u!1001 &4187144168616005961
 PrefabInstance:
   m_ObjectHideFlags: 0

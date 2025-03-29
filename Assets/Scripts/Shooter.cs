@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Shooter : MonoBehaviour
@@ -20,6 +21,7 @@ public class Shooter : MonoBehaviour
     {
         GameObject bullet = Instantiate(bullerPrefab, this.transform.position, Quaternion.identity);
         bullet.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force);
+
 
 
     }

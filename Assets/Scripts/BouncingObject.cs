@@ -28,7 +28,6 @@ public class BouncingObject : MonoBehaviour
 
     void ChangeDirection()
     {
-        
         currentDirection = -currentDirection;  
         ApplyForce();  
     }

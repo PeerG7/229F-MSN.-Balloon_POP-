@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -10,7 +12,8 @@ public class SpawnManager : MonoBehaviour
     public Wave[] waves;
     public int currentWave = 0;
 
-    void Start()
+
+    public void Start()
     {
         StartCoroutine(SpawnRoutine());
     }
@@ -47,6 +50,6 @@ public class SpawnManager : MonoBehaviour
             Debug.Log("Next Wave");
             currentWave++;
         }
-        Debug.Log("Finished!!");
+        Debug.Log("Finished!!!");
     }
 }
