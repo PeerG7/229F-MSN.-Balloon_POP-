@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8941486746507084546}
   - component: {fileID: -6838076564478785964}
   - component: {fileID: -8749760720876285265}
+  - component: {fileID: 2443513776213089807}
   m_Layer: 0
   m_Name: Balloon_Ghost
   m_TagString: Enemy
@@ -95,7 +96,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de9221731a63a845bd65d5a6f4f868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 100
+  scoreValue: -10
+--- !u!75 &2443513776213089807
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187144168491269354}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 12, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1001 &4187144168616005961
 PrefabInstance:
   m_ObjectHideFlags: 0

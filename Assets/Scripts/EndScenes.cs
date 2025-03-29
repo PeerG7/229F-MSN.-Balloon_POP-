@@ -8,6 +8,10 @@ public class EndScenes : MonoBehaviour
     public int score = 0;
     public TextMeshProUGUI scoreText; // เชื่อมกับ UI
 
+    public int targetScore = 100;
+    public string End = "End";
+    public string End2 = "End2";
+
     private void Awake()
     {
         if (Instance == null)
@@ -31,6 +35,8 @@ public class EndScenes : MonoBehaviour
         score += points;
         Debug.Log("Score Updated: " + score);
         UpdateScoreUI(); // อัปเดต UI
+        check();
+        check2();
     }
 
     private void UpdateScoreUI()
@@ -42,6 +48,22 @@ public class EndScenes : MonoBehaviour
         else
         {
             Debug.LogError("Score text is not assigned in GameManager!");
+        }
+    }
+
+    void check()
+    {
+        if (score >= 100 )
+        {
+            Debug.Log("Target Score Reached! Changing Scene...");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(End);
+        }
+    }
+    void check2()
+    {
+        if (score <= -40)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(End2);
         }
     }
 }
